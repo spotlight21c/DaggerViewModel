@@ -5,7 +5,6 @@ import javax.inject.Inject
 
 class MainViewModel @Inject constructor() : ViewModel() {
 
-    fun getMyName(): String {
-        return "Hello World"
-    }
+    var username: String = "Guest"
+
 }

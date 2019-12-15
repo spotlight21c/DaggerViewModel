@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/loginUsernameFragment">
+
+    <fragment
+        android:id="@+id/loginUsernameFragment"
+        android:name="com.trend21c.daggerviewmodel.LoginUsernameFragment"
+        android:label="fragment_login_username"
+        tools:layout="@layout/fragment_login_username" />
+    <fragment
+        android:id="@+id/loginPasswordFragment"
+        android:name="com.trend21c.daggerviewmodel.LoginPasswordFragment"
+        android:label="fragment_login_password"
+        tools:layout="@layout/fragment_login_password" />
+</navigation>

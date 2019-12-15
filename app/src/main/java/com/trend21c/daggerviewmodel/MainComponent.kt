@@ -1,8 +1,14 @@
 package com.trend21c.daggerviewmodel
 
-import dagger.Component
+import dagger.Subcomponent
 
-@Component(modules = [MainModule::class, ViewModelModule::class, ViewModelFactoryModule::class])
+@Subcomponent
 interface MainComponent {
+
+    @Subcomponent.Factory
+    interface Factory {
+        fun create(): MainComponent
+    }
+
     fun inject(mainActivity: MainActivity)
 }
